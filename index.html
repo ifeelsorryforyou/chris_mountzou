@@ -94,7 +94,7 @@
                                     </div>
 
                                     <div class="action">
-                                        <a href="#aboutme" class="btn btn-default">More</a>
+                                        <a href="#aboutme" class="btn btn-default" data-trigger="scroll">More</a>
                                     </div>
                                 </div>
                                 <!-- Banner Content End -->
@@ -143,6 +143,13 @@
                                         </tr>
                                         <tr>
                                             <th>
+                                                <i class="fa fa-home"></i>
+                                                <span>City</span>
+                                            </th>
+                                            <td>Athens, Greece</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>
                                                 <i class="fa fa-phone"></i>
                                                 <span>Phone</span>
                                             </th>
@@ -153,14 +160,14 @@
                                                 <i class="fa fa-envelope"></i>
                                                 <span>Email</span>
                                             </th>
-                                            <td><a href="mailto:john@example.com" class="btn-link">chrismountzouATgmail.com</a></td>
+                                            <td><a href="mailto:chrismountzou@gmail.com" class="btn-link">chrismountzouATgmail.com</a></td>
                                         </tr>
                                         <tr>
                                             <th>
                                                 <i class="fa fa-globe"></i>
                                                 <span>Website</span>
                                             </th>
-                                            <td><a href="www.johndoe.com" class="btn-link">www.mountzou.cf</a></td>
+                                            <td><a href="http://www.mountzou.cf" class="btn-link">www.mountzou.cf</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -254,7 +261,7 @@
                         <!-- Service Block Start -->
                         <div class="service--block">
                             <div class="icon">
-                                <i class="fa fa-futbol-o"></i>
+                                <i class="fa fa-beer"></i>
                             </div>
 
                             <div class="title">
@@ -678,7 +685,7 @@
                         <h3 class="h4">You can drop me a line here</h3>
                     </div>
 
-                    <form action="forms/contact-form.php">
+                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxzDagGLVkCF4gRq4cpZMs5EwCDBUCIt2Qy4ZZo/exec" onsubmit=" alert('Successfully Send!');return false;" >
                         <div class="status"></div>
 
                         <div class="row">
@@ -754,6 +761,20 @@
     <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
+
+    <script>
+    document.getElementById("gform").onsubmit = function() {myFunction()};
+
+    function myFunction() {
+      var form = document.getElementById("gform");
+      form.reset();
+      $(document).ready(function(){
+        $("form").hide();
+      });
+    }
+    </script>
+
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 
 </body>
 </html>
