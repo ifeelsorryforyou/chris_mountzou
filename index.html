@@ -677,7 +677,7 @@
                         <h3 class="h4" id="success">You can drop me a line here</h3>
                     </div>
 
-                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxzDagGLVkCF4gRq4cpZMs5EwCDBUCIt2Qy4ZZo/exec" onsubmit=" alert('Successfully Send!');return false;" >
+                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxzDagGLVkCF4gRq4cpZMs5EwCDBUCIt2Qy4ZZo/exec" >
                         <div class="status"></div>
 
                         <div class="row">
@@ -755,6 +755,8 @@
     document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>
 
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
     <script>
     document.getElementById("gform").onsubmit = function() {myFunction()};
 
@@ -762,15 +764,12 @@
 
     function myFunction() {
       var form = document.getElementById("gform");
-      form.reset();
       $(document).ready(function(){
         $("form").hide();
         document.getElementById("success").innerText = "You have Successfully sent your Email.";
       });
     }
     </script>
-
-    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 
 </body>
 </html>
