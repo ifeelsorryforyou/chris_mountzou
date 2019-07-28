@@ -682,7 +682,7 @@
                 <!-- Contact Form Start -->
                 <div class="contact--form pb--60" data-form="ajax">
                     <div class="title text-center text-uppercase pb--30">
-                        <h3 class="h4">You can drop me a line here</h3>
+                        <h3 class="h4" id="success">You can drop me a line here</h3>
                     </div>
 
                     <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxzDagGLVkCF4gRq4cpZMs5EwCDBUCIt2Qy4ZZo/exec" onsubmit=" alert('Successfully Send!');return false;" >
@@ -718,6 +718,7 @@
                             </div>
                         </div>
                     </form>
+
                 </div>
                 <!-- Contact Form End -->
             </div>
@@ -765,11 +766,14 @@
     <script>
     document.getElementById("gform").onsubmit = function() {myFunction()};
 
+    $(".success").hide();
+
     function myFunction() {
       var form = document.getElementById("gform");
       form.reset();
       $(document).ready(function(){
         $("form").hide();
+        document.getElementById("success").innerText = "You have Successfully sent your Email.";
       });
     }
     </script>
