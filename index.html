@@ -106,84 +106,6 @@
         </section>
         <!-- Banner Section End -->
 
-        <!-- About Section Start -->
-        <section id="aboutme" class="section pt--100 pb--40">
-            <div class="container">
-                <!-- Section Title Start -->
-                <div class="section--title pb--60 text-center">
-                    <h2 class="h2 text-uppercase">About</h2>
-                </div>
-                <!-- Section Title End -->
-
-                <div class="row row--md-vc">
-                    <div class="offset-md-4 col-md-6 pb--60">
-                        <!-- About Block Start -->
-                        <div class="about--block">
-                            <div class="title">
-                                <h2 class="h4 fw--700 text-uppercase">Personal Details</h2>
-                            </div>
-
-                            <div class="info pt--50">
-                                <table class="ff--primary">
-                                    <tbody>
-                                        <tr>
-                                            <th>
-                                                <i class="fa fa-calendar"></i>
-                                                <span>Brithday</span>
-                                            </th>
-                                            <td>10/07/1994</td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <i class="fa fa-home"></i>
-                                                <span>City</span>
-                                            </th>
-                                            <td>Athens, Greece</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <i class="fa fa-phone"></i>
-                                                <span>Phone</span>
-                                            </th>
-                                            <td><a href="tel:+123123123456" class="btn-link">(+30) 698 7952397</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <i class="fa fa-envelope"></i>
-                                                <span>Email</span>
-                                            </th>
-                                            <td><a href="mailto:chrismountzou@gmail.com" class="btn-link">chrismountzouATgmail.com</a></td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <i class="fa fa-globe"></i>
-                                                <span>Website</span>
-                                            </th>
-                                            <td><a href="http://www.mountzou.cf" class="btn-link">www.mountzou.cf</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="social text-dark pt--30">
-                                <ul class="nav">
-                                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="action pt--60">
-                                <a href="cv.pdf" target="_blank" class="btn btn-default" >Download Resume</a>
-                            </div>
-                        </div>
-                        <!-- About Block End -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section End -->
-
         <!-- Services Section Start -->
         <section id="services" class="section pt--100 pb--40 bg-light">
             <div class="container">
@@ -677,7 +599,7 @@
                         <h3 class="h4" id="success">You can drop me a line here</h3>
                     </div>
 
-                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxzDagGLVkCF4gRq4cpZMs5EwCDBUCIt2Qy4ZZo/exec" >
+                    <form action="contactform.php" method="post" >
                         <div class="status"></div>
 
                         <div class="row">
@@ -706,7 +628,7 @@
                             </div>
 
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-block btn-primary">Send Message</button>
+                                <input type="submit" name="submit" class="form-control"></input>
                             </div>
                         </div>
                     </form>
